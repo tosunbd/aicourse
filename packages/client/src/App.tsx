@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Button } from './components/ui/button';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -12,7 +11,12 @@ function App() {
       .then(data => setMessage(data.message))
       .catch(error => console.error('Error fetching message:', error));
   }, []);
-  return <p className='font-bold p-4 text-3xl'>{message}</p>
+  return (
+    <>
+      <p className='font-bold p-4 text-3xl'>{message}</p>
+      <Button>Click me</Button>
+    </>
+  )
 }
 
 export default App

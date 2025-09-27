@@ -8,7 +8,7 @@
     "dev:server": "bun run --cwd packages/server dev",
     "build:client": "bun run --cwd packages/client build",
     "start:server": "bun run --cwd packages/server start",
-    "dev": "bun run index.ts"
+    "dev": "concurrently \"bun:dev:*\""
   },
   "dependencies": {
     "express": "^5.1.0",
