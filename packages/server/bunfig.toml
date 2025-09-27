@@ -1,0 +1,7 @@
+[install]
+# Never install in this directory
+frozenLockfile = true
+
+[install.lockfile]
+# Use root lockfile
+path = "../../bun.lockb"

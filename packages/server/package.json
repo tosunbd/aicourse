@@ -6,12 +6,5 @@
   "scripts": {
     "start": "bun run index.ts",
     "dev": "bun --watch run index.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/express": "^5.0.3"
-  },
-  "dependencies": {
-    "express": "^5.1.0"
   }
 }
